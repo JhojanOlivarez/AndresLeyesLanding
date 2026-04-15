@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap");
+@import "react-calendar/dist/Calendar.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #12212f;
+  background:
+    radial-gradient(circle at top, rgba(92, 167, 199, 0.14), transparent 30%),
+    linear-gradient(180deg, #f7f9fb 0%, #eef4f8 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply m-0 font-body text-brand-ink antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.glass-panel {
+  @apply border border-white/40 bg-white/70 backdrop-blur-xl;
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.eyebrow {
+  @apply inline-flex items-center gap-2 rounded-full border border-brand-navy/10 bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-brand-slate shadow-soft;
+}
+
+.headline {
+  @apply font-display text-4xl font-semibold leading-tight text-brand-ink sm:text-5xl lg:text-6xl;
+}
+
+.copy {
+  @apply text-base leading-8 text-brand-slate sm:text-lg;
+}
+
+.react-calendar {
+  @apply w-full rounded-[2rem] border-0 bg-transparent p-0 font-body;
+}
+
+.react-calendar__navigation {
+  @apply mb-6 flex items-center gap-2;
+}
+
+.react-calendar__navigation button {
+  @apply min-h-[48px] rounded-2xl border border-brand-navy/10 bg-white/80 text-sm font-semibold text-brand-navy transition hover:bg-brand-navy hover:text-white;
+}
+
+.react-calendar__month-view__weekdays {
+  @apply mb-3 text-center text-xs font-bold uppercase tracking-[0.24em] text-brand-slate;
+}
+
+.react-calendar__tile {
+  @apply rounded-2xl border border-transparent py-4 text-sm font-semibold text-brand-ink transition;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  @apply border-brand-cyan/40 bg-brand-cyan/10 text-brand-navy;
+}
+
+.react-calendar__tile--now {
+  @apply bg-brand-gold/20 text-brand-navy;
+}
+
+.react-calendar__tile--active {
+  @apply bg-brand-navy text-white shadow-glow;
+}
+
+.react-calendar__tile:disabled {
+  @apply cursor-not-allowed text-brand-silver;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

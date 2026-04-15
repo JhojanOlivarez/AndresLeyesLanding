@@ -1,0 +1,36 @@
+
+> andres-leyes-fisioterapia@0.0.0 dev
+> vite --host 0.0.0.0 --port 4173
+
+
+  [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m294[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4173[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://169.254.83.107:[1m4173[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.18.248:[1m4173[22m/[39m
+[2m7:07:29 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/BlogPage.jsx, /src/styles/index.css, /src/pages/TeamPage.jsx, /src/pages/ServicesPage.jsx, /src/pages/HomePage.jsx, /src/pages/AppointmentsPage.jsx, /src/components/FloatingWhatsApp.jsx, /src/components/Navbar.jsx, /src/components/Footer.jsx[22m
+[2m7:07:53 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/styles/index.css[22m
+[2m7:08:09 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Navbar.jsx, /src/styles/index.css[22m
+[2m7:08:09 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Footer.jsx, /src/styles/index.css[22m
+[2m7:08:23 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/BrandLogo.jsx, /src/styles/index.css[22m
+[2m7:08:23 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Footer.jsx, /src/styles/index.css[22m
+[2m7:10:40 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/HomePage.jsx, /src/styles/index.css[22m
+[2m7:11:58 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/AboutPage.jsx, /src/styles/index.css[22m
+[2m7:11:58 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/TeamPage.jsx, /src/styles/index.css[22m
+[2m7:11:58 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ServicesPage.jsx, /src/styles/index.css[22m
+[2m7:11:58 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/BlogPage.jsx, /src/styles/index.css[22m
+[2m7:11:58 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ContactPage.jsx, /src/styles/index.css[22m
+[2m7:12:15 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/SectionIntro.jsx, /src/styles/index.css[22m
+[2m7:12:15 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/AboutPage.jsx, /src/styles/index.css[22m
+[2m7:12:15 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ContactPage.jsx, /src/styles/index.css[22m
+[2m7:13:27 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Footer.jsx, /src/styles/index.css[22m
+[2m7:13:27 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/PageHero.jsx, /src/styles/index.css[22m
+[2m7:34:42 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/BlogPage.jsx, /src/styles/index.css, /src/pages/TeamPage.jsx, /src/pages/ServicesPage.jsx, /src/pages/HomePage.jsx, /src/pages/AppointmentsPage.jsx, /src/components/FloatingWhatsApp.jsx, /src/components/Navbar.jsx, /src/components/Footer.jsx, /src/components/BrandLogo.jsx, /src/pages/AboutPage.jsx, /src/pages/ContactPage.jsx[22m
+[2m7:35:47 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ServiceCard.jsx, /src/styles/index.css[22m
+[2m7:36:39 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx, /src/styles/index.css[22m
+[2m7:37:34 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Footer.jsx, /src/styles/index.css[22m
+[2m7:38:50 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/HomePage.jsx, /src/styles/index.css[22m
+[2m8:12:20 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/BlogPage.jsx, /src/styles/index.css, /src/pages/TeamPage.jsx, /src/pages/ServicesPage.jsx, /src/pages/HomePage.jsx, /src/pages/AppointmentsPage.jsx, /src/components/FloatingWhatsApp.jsx, /src/components/Navbar.jsx, /src/components/Footer.jsx, /src/components/BrandLogo.jsx, /src/pages/AboutPage.jsx, /src/pages/ContactPage.jsx, /src/pages/ServiceDetailPage.jsx, /src/components/HeroPortraitCard.jsx[22m
+[2m8:12:20 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/BlogPage.jsx, /src/styles/index.css, /src/pages/TeamPage.jsx, /src/pages/ServicesPage.jsx, /src/pages/HomePage.jsx, /src/pages/AppointmentsPage.jsx, /src/components/FloatingWhatsApp.jsx, /src/components/Navbar.jsx, /src/components/Footer.jsx, /src/components/BrandLogo.jsx, /src/pages/AboutPage.jsx, /src/pages/ContactPage.jsx, /src/pages/ServiceDetailPage.jsx, /src/components/HeroPortraitCard.jsx[22m
+[2m8:12:43 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/BlogPage.jsx, /src/styles/index.css, /src/pages/TeamPage.jsx, /src/pages/ServicesPage.jsx, /src/pages/HomePage.jsx, /src/pages/AppointmentsPage.jsx, /src/components/FloatingWhatsApp.jsx, /src/components/Navbar.jsx, /src/components/Footer.jsx, /src/components/BrandLogo.jsx, /src/pages/AboutPage.jsx, /src/pages/ContactPage.jsx, /src/pages/ServiceDetailPage.jsx, /src/components/HeroPortraitCard.jsx[22m
+[2m8:12:48 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/BlogPage.jsx, /src/styles/index.css, /src/pages/TeamPage.jsx, /src/pages/ServicesPage.jsx, /src/pages/HomePage.jsx, /src/pages/AppointmentsPage.jsx, /src/components/FloatingWhatsApp.jsx, /src/components/Navbar.jsx, /src/components/Footer.jsx, /src/components/BrandLogo.jsx, /src/pages/AboutPage.jsx, /src/pages/ContactPage.jsx, /src/pages/ServiceDetailPage.jsx, /src/components/HeroPortraitCard.jsx[22m
