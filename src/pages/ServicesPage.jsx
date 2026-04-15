@@ -1,5 +1,5 @@
 import AnimatedSection from "../components/AnimatedSection";
-import PageHero from "../components/PageHero";
+import ServicesHero from "../components/ServicesHero";
 import PortfolioScroller from "../components/PortfolioScroller";
 import SectionIntro from "../components/SectionIntro";
 import ServiceCard from "../components/ServiceCard";
@@ -8,16 +8,16 @@ import { portfolioStories, servicePillars, services } from "../data/siteData";
 function ServicesPage() {
   return (
     <>
-      <PageHero
-        eyebrow="Servicios"
-        title="Soluciones terapeuticas disenadas para recuperar funcion con precision y elevar la experiencia del paciente."
-        description="Cada plan se ajusta al diagnostico funcional, al contexto del paciente y a la meta que realmente importa: volver a moverse con seguridad."
-        primaryCta={{ label: "Agendar valoracion", href: "/citas" }}
-        secondaryCta={{ label: "Hablar con la clinica", href: "/contacto" }}
+      <ServicesHero
+        eyebrow="Servicios Especializados"
+        title="Soluciones terapéuticas precisas para una recuperación óptima"
+        description="Cada plan se ajusta al diagnóstico funcional, al contexto del paciente y a la meta que realmente importa: volver a moverse con seguridad y confianza."
+        primaryCta={{ label: "Agendar Valoración", href: "/citas" }}
+        secondaryCta={{ label: "Hablar con la Clínica", href: "/contacto" }}
         stats={[
-          { value: "1:1", label: "Sesiones centradas en acompanamiento personalizado" },
-          { value: "360", label: "Valoracion fisica y lectura global del movimiento" },
-          { value: "Top", label: "Atencion pensada para pacientes exigentes" },
+          { value: "1:1", label: "Sesiones centradas en acompañamiento personalizado" },
+          { value: "360°", label: "Valoración física y lectura global del movimiento" },
+          { value: "TOP", label: "Atención pensada para pacientes exigentes" },
         ]}
       />
 

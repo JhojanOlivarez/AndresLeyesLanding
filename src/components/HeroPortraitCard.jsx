@@ -3,62 +3,79 @@ import { brand } from "../data/siteData";
 
 function HeroPortraitCard({ eyebrow = "Autoridad clinica", title = "Atencion premium y cercana" }) {
   return (
-    <div className="relative overflow-hidden rounded-[2rem] bg-[linear-gradient(145deg,#072940_0%,#0B3C5D_48%,#5CA7C7_100%)] p-4 text-white shadow-glow">
-      <div className="absolute right-[-8%] top-[-5%] h-64 w-64 rounded-full border border-white/10 bg-white/5 blur-3xl" />
+    <div className="relative overflow-visible rounded-[3rem] bg-[linear-gradient(145deg,#072940_0%,#0B3C5D_48%,#5CA7C7_100%)] p-0 text-white shadow-glow flex flex-col items-center justify-start min-h-[520px] sm:min-h-[580px] lg:min-h-[700px] pt-3 sm:pt-4">
+      {/* Logo marca de agua a la derecha */}
       <img
         src={brand.logo}
         alt={brand.name}
-        className="pointer-events-none absolute right-[-2rem] top-6 hidden w-56 opacity-10 brightness-0 invert md:block"
+        className="pointer-events-none absolute right-[-40px] top-1/2 w-[200px] max-w-[25vw] opacity-12 brightness-0 invert -translate-y-1/2 z-0 hidden md:block"
+        style={{filter: 'blur(0.2px)'}}
       />
-      <div className="relative overflow-hidden rounded-[1.7rem] border border-white/15 bg-white/8 p-4">
-        <div className="mb-4 flex items-center justify-between gap-4">
-          <div>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-white/60">{eyebrow}</p>
-            <h3 className="mt-2 font-display text-xl font-semibold">{title}</h3>
-          </div>
-          <div className="rounded-2xl border border-white/15 bg-white/10 p-2">
-            <img src={brand.logo} alt={brand.shortName} className="h-12 w-12 object-contain brightness-0 invert" />
-          </div>
+      {/* Foto protagonista optimizada para mobile */}
+      <div className="relative z-10 flex flex-col items-center justify-center w-full" style={{marginTop: '0px'}}>
+        <div className="relative w-[85vw] max-w-[320px] h-[350px] sm:w-[70vw] sm:max-w-[400px] sm:h-[480px] lg:max-w-[480px] lg:h-[580px] flex-shrink-0 flex items-end justify-end">
+          <div className="absolute inset-0 rounded-[2.5rem] bg-gradient-to-br from-white/40 via-transparent to-brand-cyan/20 shadow-2xl" style={{zIndex: 1, filter: 'blur(2px)'}} />
+          <img
+            src={brand.heroImage}
+            alt="Andres Leyes Fisioterapia"
+            className="relative rounded-[2.5rem] shadow-2xl object-cover w-full h-full z-10"
+            style={{objectPosition: 'center top'}}
+          />
         </div>
-
-        <div className="relative rounded-[1.6rem] bg-[radial-gradient(circle_at_top,#ffffff_0%,#f2f6f9_46%,#d7e4ec_100%)] p-4">
-          <div className="rounded-[1.3rem] border border-brand-navy/10 bg-white/70 p-3 shadow-soft">
-            <img
-              src={brand.heroImage}
-              alt="Andres Leyes Fisioterapia"
-              className="mx-auto h-[320px] w-full object-contain sm:h-[420px]"
-            />
-          </div>
-
-          <div className="absolute bottom-6 left-4 rounded-2xl bg-brand-navy px-4 py-3 text-white shadow-soft">
-            <p className="text-[11px] uppercase tracking-[0.22em] text-white/60">WhatsApp</p>
-            <p className="mt-1 text-sm font-semibold">{brand.phoneDisplay}</p>
-          </div>
-
-          <div className="absolute right-4 top-4 rounded-2xl bg-white px-4 py-3 text-brand-navy shadow-soft">
-            <p className="text-[11px] uppercase tracking-[0.22em] text-brand-slate">Instagram</p>
-            <p className="mt-1 text-sm font-semibold">{brand.instagramHandle}</p>
-          </div>
+        {/* Tarjetas flotantes - Versión mobile mejorada */}
+        
+        {/* Instagram y WhatsApp para mobile - botones inferiores */}
+        <div className="flex gap-4 mt-4 md:hidden">
+          <a
+            href="https://www.instagram.com/andresleyes_ft?igsh=MWJlazVkenU0dWpiag=="
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 rounded-xl bg-white/90 px-4 py-3 text-brand-navy shadow-lg flex flex-col items-center hover:scale-105 transition-transform"
+            style={{textDecoration: 'none'}}
+          >
+            <FiInstagram className="text-xl mb-1 text-pink-600" />
+            <span className="text-xs font-bold">Instagram</span>
+          </a>
+          <a
+            href="https://wa.me/573186135272?text=Hola%20Andres%20Leyes%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20acerca%20de%20tus%20servicios."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 rounded-xl bg-brand-navy px-4 py-3 text-white shadow-lg flex flex-col items-center hover:scale-105 transition-transform"
+            style={{textDecoration: 'none'}}
+          >
+            <FiMessageCircle className="text-xl mb-1 text-green-400" />
+            <span className="text-xs font-bold">WhatsApp</span>
+          </a>
         </div>
-
-        <div className="mt-4 grid gap-3 sm:grid-cols-2">
-          <div className="rounded-2xl border border-white/10 bg-white/8 px-4 py-3 text-sm">
-            <div className="flex items-center gap-2 text-white/70">
-              <FiInstagram />
-              <span>Comunidad activa</span>
-            </div>
-            <p className="mt-1 font-semibold">
-              {brand.instagramStats.followers} seguidores
-            </p>
+        
+        {/* Tarjeta Instagram flotante a la izquierda - Desktop */}
+        <a
+          href="https://www.instagram.com/andresleyes_ft?igsh=MWJlazVkenU0dWpiag=="
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute left-[-55px] top-[40%] -translate-y-1/2 z-20 hidden md:block"
+          style={{textDecoration: 'none'}}
+        >
+          <div className="rounded-2xl bg-white/90 px-6 py-4 text-brand-navy shadow-xl flex flex-col items-center mb-4 hover:scale-105 transition-transform">
+            <FiInstagram className="text-2xl mb-1 text-pink-600" />
+            <span className="text-xs uppercase tracking-[0.22em] font-bold">Instagram</span>
+            <span className="mt-1 text-base font-semibold">{brand.instagramHandle}</span>
           </div>
-          <div className="rounded-2xl border border-white/10 bg-white/8 px-4 py-3 text-sm">
-            <div className="flex items-center gap-2 text-white/70">
-              <FiMessageCircle />
-              <span>Reservas directas</span>
-            </div>
-            <p className="mt-1 font-semibold">Agenda agil por WhatsApp</p>
+        </a>
+        {/* Tarjeta WhatsApp flotante a la derecha - Desktop */}
+        <a
+          href="https://wa.me/573186135272?text=Hola%20Andres%20Leyes%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20acerca%20de%20tus%20servicios."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute right-[-55px] top-[60%] -translate-y-1/2 z-20 hidden md:block"
+          style={{textDecoration: 'none'}}
+        >
+          <div className="rounded-2xl bg-brand-navy px-6 py-4 text-white shadow-xl flex flex-col items-center mb-4 hover:scale-105 transition-transform">
+            <FiMessageCircle className="text-2xl mb-1 text-green-400" />
+            <span className="text-xs uppercase tracking-[0.22em] font-bold">WhatsApp</span>
+            <span className="mt-1 text-base font-semibold">{brand.phoneDisplay}</span>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   );
